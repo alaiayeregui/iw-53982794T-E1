@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body{
@@ -21,6 +22,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 header img{
@@ -56,7 +59,6 @@ header button a{
 }
 
 #div-info{
-    height: 70%;
     padding: 20px;
     background-image: url(../imagenes/fondo-oreka.png);
 }
@@ -108,3 +110,38 @@ form{
     flex-direction: column;
     line-height: 4;
 }
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.cuadro-lista{
+    list-style: none;
+    border: 1px solid #84898e;
+    background-color: #c4cbd0;
+    border-radius: 10px;
+    width: 25%;
+    height: 60px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-top: 30px;
+}
+
+
+#parrafo-indice{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 90%;
+    margin-left: 35px;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url(../imagenes/fondo-geometrico.png); 
+    border: 2px solid #84898e;
+}
+

@@ -20,30 +20,88 @@
         </header>
         <article id="div-info">
             <form>
-                <div>
-                    <label>Nombre de la empresa</label>
-                    <input type="text" placeholder="Ingrese el nombre">
+                <h3>Información personal:</h3>
+                <div class="contenedor-form">
+                    <div>
+                        <label for="nombre-persona">Nombre</label>
+                        <input type="text" placeholder="Ingrese su nombre" id="nombre-persona">
+                        <label for="Apellido">Apellidos</label>
+                        <input type="text" placeholder="Ingrese sus apellidos" id="apellido">
+                    </div>
+                    <div>
+                        <label for="correo">Correo</label>
+                        <input type="email" placeholder="Ingrese su correo" id="correo"> 
+                        <label for="telefono">Teléfono</label>
+                        <input type="number" placeholder="Ingrese su teléfono" id="telefono">
+                    </div>
+                    <div>
+                        <label for="puesto">Puesto de trabajo</label>
+                        <input type="text" placeholder="Ingrese el puesto" id="puesto"> 
+                        <label for="fecha">Fecha de contacto</label>
+                        <input type="date" id="fecha"> 
+                    </div>
                 </div>
-                <div>
-                    <label>Correo de contacto</label>
-                    <input type="text" placeholder="Ingrese correo">
-                </div>
-                <div>
-                    <label>Servicio</label>
-                    <select>
-                        <option>Contratar servicio</option>
-                        <option>Mas info</option>
-                        <option>Otro</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Motivo de contacto</label>
-                    <textarea></textarea>
-                </div>
-                
-                <div>
-                    <input type="checkbox">
-                    <label>No soy un robot</label>
+                <h3>Información de la empresa:</h3>
+                <div class="contenedor-form">
+                    <div>
+                        <label for="nombre-empresa">Nombre de la empresa</label>
+                        <input type="text" placeholder="Ingrese el nombre" id="nombre-empresa">
+                    </div>
+                    <div id="servicios">
+                        <label>Servicio solicitado</label>
+                        <input type="checkbox">
+                        <label>Implantación de ERP, CRM o MES</label>
+                        <input type="checkbox">
+                        <label>Mantenimiento de ERP, CRM o MES</label>
+                        <input type="checkbox">
+                        <label>Creación de un host de gestión</label>
+                        <input type="checkbox">
+                        <label>instalación de hardware o red</label>
+                        <input type="checkbox">
+                        <label>Implementación KELVIN</label>
+                        <input type="checkbox">
+                        <label>Estudio de proceso productivo</label>
+                        <input type="checkbox">
+                        <label>Implantación de OLAIA</label>
+                        <input type="checkbox">
+                        <label>Formación en SAP</label>
+                        <input type="checkbox">
+                        <label>Solicitar licencias</label>
+                        <input type="checkbox">
+                        <label>Implantación de ERP, CRM o MES</label>
+                        <input type="checkbox">
+                        <label>Implantación de FEEL2SALES</label>
+                        <input type="checkbox">
+                        <label>Implantación de ELOISE</label>
+                    </div>
+                    <div>
+                        <label>¿Cómo nos has conocido?</label>
+                        <select>
+                            <option>Linkedln</option>
+                            <option>YouTube</option>
+                            <option>Prensa</option>
+                            <option>Ya soy cliente</option>
+                            <option>Recomendación</option>
+                            <option>Google</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Añadadir comentarios:</label>
+                        <textarea></textarea>
+                    </div>
+                    
+                    <div id="radio-blog">
+                        <label>¿Interesado en nuestro blog?</label>
+                        <input type="radio" name="blog">
+                        <label>Diariamente</label>
+                        <input type="radio" name="blog">
+                        <label>Semanalmente</label>
+                        <input type="radio" name="blog">
+                        <label>Mensualmente</label>
+                        <input type="radio" name="blog">
+                        <label>Nunca</label>
+                    </div>
                 </div>
                 <div>
                     <input type="submit">
@@ -51,13 +109,38 @@
             </form>
         </article>
         <footer>
-            <div>
-                <p>Vitoria-Gasteiz   <a href="https://maps.app.goo.gl/DfjEWc6WZYX3dGSN7">  Avda. Los Olmos 1, Edificio IV</a></p>
-                <p>Leioa   <a href="https://maps.app.goo.gl/uHCkpkG7rmeqUfFJ6">  Plaza Ibaiondo 1, 2ª planta</a></p>
-                <p>Donostia   <a href="https://maps.app.goo.gl/omeyuGH9XL4bgvCd6">  De Pillotegi Bidea 2, 3ª planta</a></p>
-                <p>Mutilva   <a href="https://maps.app.goo.gl/vLQojMeBkCNzbgJi9">  Pol. Ind. Mutilva, Calle E nº9, 1ºA</a></p>
-                <p>Igualada   <a href="https://maps.app.goo.gl/785eRHBf5bzmQcP59">  Passeig Mossèn Jacint Verdaguer, 40, 2ª planta</a></p>
-            </div>
+            <table>
+                <tr>
+                    <th>Nuestras oficinas</th>
+                    <th>Horario de atención</th>
+                    <th>Enlace a la ubicación</th>
+                </tr>
+                <tr>
+                    <td>Vitoria-Gasteiz</td>
+                    <td>De 9:00 a 14:00 y de 16:00 a 19:00</td>
+                    <td> <a href="https://maps.app.goo.gl/DfjEWc6WZYX3dGSN7">Avda. Los Olmos 1, Edificio IV</a></td>
+                </tr>
+                <tr>
+                    <td>Leioa</td>
+                    <td>De 9:00 a 14:00 y de 16:00 a 19:00</td>
+                    <td> <a href="https://maps.app.goo.gl/uHCkpkG7rmeqUfFJ6">Plaza Ibaiondo 1, 2ª planta</a></td>
+                </tr>
+                <tr>
+                    <td>Donostia</td>
+                    <td>De 9:00 a 14:00 y de 16:00 a 19:00</td>
+                    <td> <a href="https://maps.app.goo.gl/omeyuGH9XL4bgvCd6">De Pillotegi Bidea 2, 3ª planta</a></td>
+                </tr>
+                <tr>
+                    <td>Mutilva</td>
+                    <td>De 9:00 a 14:00 y de 16:00 a 19:00</td>
+                    <td> <a href="https://maps.app.goo.gl/vLQojMeBkCNzbgJi9">Pol. Ind. Mutilva, Calle E nº9, 1ºA</a></td>
+                </tr>
+                <tr>
+                    <td>Igualada</td>
+                    <td>De 9:00 a 14:00 y de 16:00 a 19:00</td>
+                    <td> <a href="https://maps.app.goo.gl/785eRHBf5bzmQcP59">Passeig Mossèn Jacint Verdaguer, 40, 2ª planta</a></td>
+                </tr>
+            </table>
         </footer>
     </body>
 </html>

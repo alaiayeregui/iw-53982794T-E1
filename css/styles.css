@@ -27,8 +27,9 @@ header{
 }
 
 header img{
-    height: 70px;
+    height: 60px;
     margin-left: 20px;
+    margin:10px;
 
 }
 
@@ -66,13 +67,20 @@ header button a{
 footer{
     background-color: rgb(151, 0, 71);
     /* justify-content: flex-end; */
-    height: 15%;
+    height: 30%;
     margin-top: auto;
     color: white;
 }
 
-footer p{
-    color:white;
+footer table{
+    margin: 20px;
+    font-size: 12px;
+    /* line-height: 1.5; */
+}
+
+footer table td{
+    padding: 5px;
+    padding-right: 20px;
 }
 
 footer a{
@@ -81,19 +89,47 @@ footer a{
 }
 
 #div-separacion aside{
-    width: 15%;
-    background-color: rgb(151, 0, 71);
+    width: 35%;
+    background-color: rgb(186, 36, 106);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-separacion aside h3, 
+#div-separacion aside h5, 
+#div-separacion aside p{
+    text-align: center;
+    margin: 10px;
+}
+
+#div-separacion aside img{
+    width: 80%;
+}
+
+#div-separacion aside button{
+    background-color: #c4cbd0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px; 
+}
+
+#div-separacion aside a{
+    color: rgb(151, 0, 71);
+    font-size: 15px;
+    text-decoration: none;
 }
 
 #div-separacion{
-    height: 70%;
     display: flex;
     flex-direction: row;
 }
 
 #div-separacion article{
-    width: 85%;
-    padding: 40px;
+    padding: 20px;
     background-image: url(../imagenes/fondo-oreka.png);
 }
 
@@ -104,10 +140,11 @@ footer a{
     line-height: 2;
 }
 
-form{
-    margin: 20px;
+form, .contenedor-form{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     line-height: 4;
 }
 
@@ -145,3 +182,41 @@ ul{
     border: 2px solid #84898e;
 }
 
+.contenedor-form{
+    border-bottom: 2px solid #84898e;
+}
+
+.contenedor-form input{
+    width: 150px;
+    margin-right: 20px;
+}
+
+#div-separacion article h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.div-productos{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #84898e;
+}
+
+.div-interior{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.div-interior h3{
+    color:rgb(151, 0, 71);
+    font-weight: 700;
+}
+
+.div-interior h5{
+    font-weight: 600;
+}

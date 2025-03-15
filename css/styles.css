@@ -59,7 +59,7 @@ header button a{
     color: rgb(151, 0, 71);
 }
 
-#div-info{
+.div-info{
     padding: 20px;
     background-image: url(../imagenes/fondo-oreka.png);
 }
@@ -219,4 +219,120 @@ ul{
 
 .div-interior h5{
     font-weight: 600;
+}
+
+.contenedor-form textarea{
+    width: 150px;
+    margin-right: 20px;
+}
+
+#servicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+}
+
+#servicios label{
+    margin-left: 10px;
+}
+
+#enviar-form{
+    background-color: rgb(186, 36, 106);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px; 
+}
+
+#div-proyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-proyecto h1{
+    width: 160px;
+    color:rgb(151, 0, 71);
+    font-weight: 700;
+    margin-top: 20px;
+    border-bottom: #84898e 2px solid;
+    text-align: center;
+    font-size: 35px;
+}
+
+#div-proyecto div p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#div-proyecto div img{
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#div-proyecto h3{
+    margin: 20px;
+    color:rgb(151, 0, 71);
+    font-weight: 600;
+    border-bottom: 2px solid #84898e;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#div-proyecto div{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#div-proyecto ul{
+    width: 80%;
+    list-style: circle;
+}
+
+#div-proyecto ul li{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#div-proyecto img{
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#div-proyecto table{
+    width: 80%;
+    margin-top: 30px;
+    text-align: justify;
+    padding: 20px;
+}
+
+#div-proyecto table th{
+    padding: 5px;
+    background-color: #84898e;
+}
+
+#div-proyecto table .fila-impar{
+    background-color: #afb6bb;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#div-proyecto table .fila-par{
+    background-color: #c4cbd0;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
 }

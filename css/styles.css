@@ -199,7 +199,6 @@ ul{
 
 .cuadro-lista1{
     list-style: none;
-    border: 1px solid #84898e;
     background-color: #e5e0fc  ;
     border-radius: 10px;
     width: 25%;
@@ -213,7 +212,6 @@ ul{
 
 .cuadro-lista2{
     list-style: none;
-    border: 1px solid #84898e;
     background-color:  #aa6c8f ;
     border-radius: 10px;
     width: 25%;
@@ -227,7 +225,6 @@ ul{
 
 .cuadro-lista3{
     list-style: none;
-    border: 1px solid #84898e;
     background-color:  #d09be8;
     border-radius: 10px;
     width: 25%;
@@ -246,9 +243,9 @@ ul{
     line-height: 1.5;
     margin-top: 20px;
     margin-bottom: 15px;
-    margin-right: 14%;
-    margin-left: 14%;
-    width: 70%;
+    margin-right: 20%;
+    margin-left: 20%;
+    width: 60%;
     border-radius: 10px;
     padding: 20px;
     background-image: url(../imagenes/fondo-geometrico.png); 
@@ -426,4 +423,112 @@ form, .contenedor-form{
 
 #div-proyecto table td{
     padding: 15px;
+}
+
+/* Estilo de tablet */
+@media only screen and (min-width: 481px) and (max-width: 960px){
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+
+
+    .div-productos {
+        flex-direction: column;
+        width: 90%;
+        margin: 2% 5%;
+    }
+
+    #div-separacion aside{
+        flex-direction: column;
+    }
+
+    #div-separacion article{
+        width: 100%
+    }
+
+    .cuadro-lista1,
+    .cuadro-lista2,
+    .cuadro-lista3 {
+        width: 45%;
+    }
+
+    .horario{
+        display: none;
+    }
+
+    .contenedor-form input,
+    .contenedor-form select,
+    .contenedor-form textarea {
+        width: 200px;
+    }
+    
+    #div-proyecto div{
+        flex-direction: column;
+    }
+
+    #div-proyecto div img{
+        width: 40%;
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+
+    video {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+/* para moviles */
+@media only screen and(max-width: 480px){
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .div-productos {
+        flex-direction: column;
+        width: 90%;
+        margin: 2% 5%;
+    }
+
+    #div-separacion aside {
+        display: none;
+    }
+
+    .cuadro-lista1,
+    .cuadro-lista2,
+    .cuadro-lista3 {
+        width: 45%;
+    }
+
+
+    .contenedor-form div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-form input{
+        width: 50px
+    }
+
+    .contenedor-form select,
+    .contenedor-form textarea {
+        width: 200px;
+    }
+
+    #div-proyecto div img{
+        display: none;
+    }
+
+    video {
+        display: none
+    }
 }

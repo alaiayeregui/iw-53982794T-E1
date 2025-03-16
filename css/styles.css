@@ -1,3 +1,4 @@
+/* general */
 *{
     margin:0;
     padding:0;
@@ -14,6 +15,7 @@ body{
 
 }
 
+/* cabecera */
 header{
     width: 100%;
     height: 15%;
@@ -59,11 +61,14 @@ header button a{
     color: rgb(151, 0, 71);
 }
 
+
+/* fondo común para todas las páginas */
 .div-info{
     padding: 20px;
     background-image: url(../imagenes/fondo-oreka.png);
 }
 
+/* pie de página */
 footer{
     background-color: rgb(151, 0, 71);
     /* justify-content: flex-end; */
@@ -85,11 +90,18 @@ footer table td{
 
 footer a{
     color: white;
-    text-decoration: dashed;
+    text-decoration: none;
 }
 
+footer a:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Barra lateral en la pagina de servicios */
 #div-separacion aside{
-    width: 35%;
+    width: 30%;
+    padding: 20px;
     background-color: rgb(186, 36, 106);
     color: white;
     display: flex;
@@ -123,16 +135,17 @@ footer a{
     text-decoration: none;
 }
 
+/* Contenedor con la barra lateral y el fondo en la página de servicios */
 #div-separacion{
     display: flex;
     flex-direction: row;
 }
 
+/* fondo para la página de servicios */
 #div-separacion article{
     padding: 20px;
     background-image: url(../imagenes/fondo-oreka.png);
 }
-
 
 #div-separacion article ul{
     margin-top: 20px;
@@ -140,68 +153,20 @@ footer a{
     line-height: 2;
 }
 
-form, .contenedor-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 4;
-}
-
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    align-items: center;
-}
-
-.cuadro-lista{
-    list-style: none;
-    border: 1px solid #84898e;
-    background-color: #c4cbd0;
-    border-radius: 10px;
-    width: 25%;
-    height: 60px;
-    padding: 20px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    text-align: justify;
-    padding-top: 30px;
-}
-
-
-#parrafo-indice{
-    font-size: 18px;
+#div-separacion article h1{
     margin-top: 20px;
-    margin-bottom: 15px;
-    width: 90%;
-    margin-left: 35px;
-    border-radius: 10px;
-    padding: 20px;
-    background-image: url(../imagenes/fondo-geometrico.png); 
-    border: 2px solid #84898e;
-}
-
-.contenedor-form{
-    border-bottom: 2px solid #84898e;
-}
-
-.contenedor-form input{
-    width: 150px;
-    margin-right: 20px;
-}
-
-#div-separacion article h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
     text-align: center;
+    color:rgb(151, 0, 71);
+    font-weight: 700;
 }
 
+/* estilo de los div de la pantalla de servicios */
 .div-productos{
+    width: 80%;
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    padding: 10px;
+    margin: 2% 10%;
+    padding: 20px;
     border-bottom: 2px solid #84898e;
 }
 
@@ -221,21 +186,142 @@ ul{
     font-weight: 600;
 }
 
-.contenedor-form textarea{
+/* estilo para la lista de la pantalla de inicio */
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cuadro-lista1{
+    list-style: none;
+    border: 1px solid #84898e;
+    background-color: #e5e0fc  ;
+    border-radius: 10px;
+    width: 25%;
+    height: 60px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-top: 30px;
+}
+
+.cuadro-lista2{
+    list-style: none;
+    border: 1px solid #84898e;
+    background-color:  #aa6c8f ;
+    border-radius: 10px;
+    width: 25%;
+    height: 60px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-top: 30px;
+}
+
+.cuadro-lista3{
+    list-style: none;
+    border: 1px solid #84898e;
+    background-color:  #d09be8;
+    border-radius: 10px;
+    width: 25%;
+    height: 60px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-top: 30px;
+}
+
+/* estilo para el parrafo de la pantalla de inicio */
+#parrafo-indice{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 14%;
+    margin-left: 14%;
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url(../imagenes/fondo-geometrico.png); 
+    border: 2px solid #84898e;
+}
+
+#titulo-servicios{
+    margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* estilo para el video */
+video{
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 12%;
+    border-radius: 10px;
+}
+
+/*formulario de contacto */
+form, .contenedor-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 4;
+}
+
+.contenedor-form{
+    border-bottom: 2px solid #84898e;
+}
+
+.contenedor-form input{
     width: 150px;
     margin-right: 20px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
 }
 
+.contenedor-form select{
+    width: 150px;
+    height: 30px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.contenedor-form textarea{
+    /* width: 150px; */
+    margin-bottom: 40px;   
+    border-radius: 5px; 
+    height: 6em;
+    width: 350px;
+}
+
+.contenedor-form textarea :active{
+    border: 1px solid rgb(186, 36, 106);
+}
+
+#radio-blog{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;    
+}
+
+/* estilo de los checkbox */
 #servicios{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    line-height: 1.5;
     flex-wrap: wrap;
-    width: 80%;
-    justify-content: space-around;
-}
-
-#servicios label{
-    margin-left: 10px;
 }
 
 #enviar-form{
@@ -247,6 +333,7 @@ ul{
     margin-top: 15px; 
 }
 
+/* Estilo de la pantalla de proyecto kelvin */
 #div-proyecto{
     display: flex;
     flex-direction: column;

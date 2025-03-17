@@ -276,6 +276,13 @@ form, .contenedor-form{
     line-height: 4;
 }
 
+.titulos-contacto{
+    color:rgb(151, 0, 71);
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
 .contenedor-form{
     border-bottom: 2px solid #84898e;
 }
@@ -426,7 +433,7 @@ form, .contenedor-form{
 }
 
 /* Estilo de tablet */
-@media only screen and (min-width: 481px) and (max-width: 960px){
+@media only screen and (min-width: 521px) and (max-width: 960px){
     header {
         flex-direction: column;
         height: auto;
@@ -437,6 +444,10 @@ form, .contenedor-form{
         height: auto;
     }
 
+    .contenedor-form div{
+        display: flex;
+        flex-direction: column;
+    }
 
 
     .div-productos {
@@ -457,10 +468,6 @@ form, .contenedor-form{
     .cuadro-lista2,
     .cuadro-lista3 {
         width: 45%;
-    }
-
-    .horario{
-        display: none;
     }
 
     .contenedor-form input,
@@ -484,13 +491,34 @@ form, .contenedor-form{
         margin-left: 0;
     }
 
+    
+    .div-interior{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .div-interior h5{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
 }
 
 /* para moviles */
-@media only screen and(max-width: 480px){
+@media only screen and (max-width: 520px){
     header {
         flex-direction: column;
-        padding: 10px;
+        padding: 5px;
+        height: auto;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .horario{
+        display: none;
     }
 
     .div-productos {
@@ -507,8 +535,8 @@ form, .contenedor-form{
     .cuadro-lista2,
     .cuadro-lista3 {
         width: 45%;
+        background-color: #d09be8;
     }
-
 
     .contenedor-form div{
         display: flex;
@@ -516,7 +544,7 @@ form, .contenedor-form{
     }
 
     .contenedor-form input{
-        width: 50px
+        width: 150px
     }
 
     .contenedor-form select,
@@ -528,7 +556,22 @@ form, .contenedor-form{
         display: none;
     }
 
-    video {
-        display: none
+    #div-proyecto img{
+        width:75%
+    }
+
+    #parrafo-indice{
+        display: none;
+    }
+
+    .div-interior{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .div-interior h5{
+        margin-top: 15px;
+        margin-bottom: 20px;
     }
 }

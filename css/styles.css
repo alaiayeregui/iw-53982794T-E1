@@ -35,7 +35,7 @@ header img{
 
 }
 
-header div{
+header section{
     margin-right: 40px;
 }
 
@@ -355,13 +355,13 @@ form, .contenedor-form{
     font-size: 35px;
 }
 
-#div-proyecto div p{
+#div-proyecto section p{
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: justify;
 }
 
-#div-proyecto div img{
+#div-proyecto section img{
     width: 20%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -377,7 +377,7 @@ form, .contenedor-form{
     padding-right: 20px;
 }
 
-#div-proyecto div{
+#div-proyecto section{
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -444,7 +444,7 @@ form, .contenedor-form{
         height: auto;
     }
 
-    .contenedor-form div{
+    .contenedor-form section{
         display: flex;
         flex-direction: column;
     }
@@ -476,11 +476,11 @@ form, .contenedor-form{
         width: 200px;
     }
     
-    #div-proyecto div{
+    #div-proyecto section{
         flex-direction: column;
     }
 
-    #div-proyecto div img{
+    #div-proyecto section img{
         width: 40%;
         margin-right: 30%;
         margin-left: 30%;
@@ -538,7 +538,7 @@ form, .contenedor-form{
         background-color: #d09be8;
     }
 
-    .contenedor-form div{
+    .contenedor-form section{
         display: flex;
         flex-direction: column;
     }
@@ -552,7 +552,7 @@ form, .contenedor-form{
         width: 200px;
     }
 
-    #div-proyecto div img{
+    #div-proyecto section img{
         display: none;
     }
 
